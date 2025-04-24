@@ -16,6 +16,5 @@ function mostrarConteudo(id) {
 
     const secaoAtiva = document.getElementById(id);
     secaoAtiva.style.display = 'block';
-    // Garante que o opacity funcione após o display:block
     setTimeout(() => secaoAtiva.classList.add('mostrar'), 10);
 }
