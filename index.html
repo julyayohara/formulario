@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Escolar</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Escolar</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-    <header>
-        <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
-        <nav id="menu">
-            <ul>
-                <li><a href="#" onclick="mostrarConteudo('matematica')">Matemática</a></li>
-                <li><a href="#" onclick="mostrarConteudo('fisica')">Física</a></li>
-                <li><a href="#" onclick="mostrarConteudo('quimica')">Química</a></li>
-            </ul>
-        </nav>
-        <h1>Portfólio</h1>
-        <input type="text" placeholder="Pesquisar...">
-        <nav class="menu-secundario">
-            <ul>
-                <li><a href="#">Atividades</a></li>
-                <li><a href="#">Provas</a></li>
-                <li><a href="#">Projetos</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="top-header">
+      <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
+      <h1>Portfólio Escolar</h1>
+    </div>
 
-   <main>
-    <section id="inicio" class="conteudo" style="display: block;">
-        <h2>Bem-vindo ao Portfólio Escolar</h2>
-        <p>Explore os conteúdos de Matemática, Física e Química usando o menu acima.</p>
+    <!-- Menu de navegação externa -->
+    <nav id="menu">
+      <ul>
+        <li><a href="#" onclick="mostrarDisciplina('matematica')">Matemática</a></li>
+        <li><a href="#" onclick="mostrarDisciplina('fisica')">Física</a></li>
+        <li><a href="#" onclick="mostrarDisciplina('quimica')">Química</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu de navegação interna -->
+    <nav class="menu-interno">
+      <ul>
+        <li><a href="#atividades">Atividades</a></li>
+        <li><a href="#provas">Provas</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seções de Matemática -->
+    <section id="matematica" class="disciplina">
+      <h2>Matemática</h2>
+      <div id="atividades" class="secao">
+        <h3>Atividades</h3>
+        <p>Atividades sobre álgebra e geometria.</p>
+      </div>
+      <div id="provas" class="secao">
+        <h3>Provas</h3>
+        <p>Prova de funções e equações.</p>
+      </div>
+      <div id="projetos" class="secao">
+        <h3>Projetos</h3>
+        <p>Projeto de matemática financeira.</p>
+      </div>
     </section>
-    
-    <section id="matematica" class="conteudo">
-        <h2>Matemática</h2>
-        <p>Aqui está o conteúdo de Matemática.</p>
+
+    <!-- Seções de Física -->
+    <section id="fisica" class="disciplina">
+      <h2>Física</h2>
+      <div class="secao">
+        <h3>Atividades</h3>
+        <p>Atividades de cinemática e dinâmica.</p>
+      </div>
+      <div class="secao">
+        <h3>Provas</h3>
+        <p>Prova sobre leis de Newton.</p>
+      </div>
+      <div class="secao">
+        <h3>Projetos</h3>
+        <p>Projeto sobre movimento uniformemente variado.</p>
+      </div>
     </section>
-    
-    <section id="fisica" class="conteudo">
-        <h2>Física</h2>
-        <p>Aqui está o conteúdo de Física.</p>
+
+    <!-- Seções de Química -->
+    <section id="quimica" class="disciplina">
+      <h2>Química</h2>
+      <div class="secao">
+        <h3>Atividades</h3>
+        <p>Atividades sobre ligações químicas.</p>
+      </div>
+      <div class="secao">
+        <h3>Provas</h3>
+        <p>Prova sobre tabela periódica.</p>
+      </div>
+      <div class="secao">
+        <h3>Projetos</h3>
+        <p>Projeto sobre reações químicas.</p>
+      </div>
     </section>
-    
-    <section id="quimica" class="conteudo">
-        <h2>Química</h2>
-        <p>Aqui está o conteúdo de Química.</p>
-    </section>
-</main>
-    
+  </main>
+
+  <footer>
+    <p>Trabalho realizado por [julya, emily oliveira,eduarda] | Colégio estadual do Parana</p>
+    <p>Contato: julya.vieira@escola.pr.gov.br</p>
+  </footer>
+
 </body>
 </html>
