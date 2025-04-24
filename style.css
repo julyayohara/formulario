@@ -76,3 +76,15 @@ input {
     display: none;
     padding: 20px;
 }
+
+.conteudo {
+    display: none;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.conteudo.mostrar {
+    display: block;
+    opacity: 1;
+}
